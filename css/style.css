@@ -64,3 +64,17 @@ main {
     width: auto;
     padding-top: 152px;
 }
+
+.section__bottom {
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    flex-wrap: wrap;
+    
+}
+.section__bottom img {
+    margin: 40px;
+}
+.images__bottom {
+
+}
