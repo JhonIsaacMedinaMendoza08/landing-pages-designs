@@ -1,0 +1,13 @@
+@import url(variables.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: var(--color-1);
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../storage/font/example.ttf);
+}
