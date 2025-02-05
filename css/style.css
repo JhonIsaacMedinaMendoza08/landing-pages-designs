@@ -3,11 +3,51 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
+}
+.container {
+    background: red;
+    width: 100%;
+    padding-top: 122px;
+    display: flex;
+    justify-content: center;
+    gap: 113px;
 
 }
+.title__text {
+    background: blue;
+}
+.title__text h1{
+    font-size: 88px;
+    color: var(--color-2);
+    font-family: "Avenir-Heavy";
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+}
+.container2 {
+    background: yellow;
+    width: 526px;
+
+}
+.container2 h2{
+    font-size: 26px;
+    color: #252525;
+    font-family: "Montserrat-Regular"
+}
+
+.container2 button {
+    width: 157px;
+    height: 50px;
+    background-color: #252525;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-family: "Montserrat-Regular";
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.image__container{
+    display: flex;
+    padding-top: 380px;
+    justify-content: center;
+    align-items: center;    
 }
