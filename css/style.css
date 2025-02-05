@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    justify-content: center;
+    align-items: center;
 }
 section {
     display: flex;
@@ -41,4 +43,18 @@ section {
     text-align: center;
     text-decoration: none;
     padding: 15px;
+}
+.images__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 56px;
+
+}
+.images__container img {
+    margin: 4px;
+}
+.images{
+    width: 1312px;
 }
