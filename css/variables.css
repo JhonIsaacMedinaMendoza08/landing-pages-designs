@@ -1,15 +1,19 @@
 :root {
     --color-1: #252525;
-    --color-1: #f5f5f5;
-    --color-1: #252525b8;
-    --color-1: #25252558;
-    --color-1: #FFFFFF;
+    --color-2: #f5f5f5;
+    --color-3: #252525b8;
+    --color-4: #25252558;
+    --color-5: #FFFFFF;
 
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+    font-family: "Avenir-Heavy";
+    src: url(../storage/font/Avenir/Avenir-Heavy.ttf);
+}
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url(../storage/font/Avenir/Avenir-Roman.ttf);
 }
 
 

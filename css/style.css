@@ -1,263 +1,76 @@
+/* Importar fuentes y variables */
 @import url(variables.css);
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
-
+}
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+header {
+    /* background-color: red; */
+    width: 933px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 72px;
+    font-family: "Avenir-Heavy";
+    color: var(--color-1);
+}
+.design__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+    gap: 16px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+.design__item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
 }
 
-.container1 {
-    width: 1440px;
-    height: 926px;
-    background-color: transparent;
-    border: 3px;
-    border-style: solid;
-    position: absolute;
-    left: 225px;
-
-}
-.container2 {
-    width: 833px;
-    height: 176px;
-    /*background-color: #ff0000;*/
-    position: absolute;
-    top: 60px;
-    left: 290px;
-}
-.container2 h1{
-    font-size: 74px;
-    font-family: "Lato-Regular";
-    color: #252525;
+.design__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
 }
 
-.container3 {
-    width: 316px;
-    height: 559px;
-    /*background-color: #fbff00;*/
-    position: absolute;
-    bottom: 90px;
-    left: 290px;
-}
-.container3 h1{
+.design__item h2 {
+    font-family: "Avenir-Heavy";
     font-size: 40px;
-    font-family: "Lato-Regular";
-    color: #252525;
-    opacity: 0.6;
-}
-.container3 h2{
-    font-size: 24px;
-    font-family: "Lato-Thin";
-    line-height: 35px;
-    color: #252525;
-    opacity: 0.9;
-    position: absolute;
-    bottom: 435px;
-
-}
-.container3 img {
-    position: absolute;
-    bottom: 0px;
-}
-.container4 {
-    width: 317px;
-    height: 147px;
-    /*background-color: #33ff00;*/
-    position: absolute;
-    bottom: 70px;
-    left: 290px;
+    color: var(--color-4);
 }
 
-.container4 h1 {
+.design__item p {
+    font-family: "Avenir-Roman";
     font-size: 24px;
-    font-family: "Lato-Thin";
-    color: #252525;
-    opacity: 0.6;
-    position: absolute;
-    left: 35px;
-}
-.container4 h2 {
-    font-size: 16px;
-    font-family: "Lato-Thin";
-    color: #252525;
-    /*opacity: 0.6;*/
-    position: absolute;
-    left: 35px;
-    top: 40px;
-    right: 60px;
-    line-height: 23px;
+    color: var(--color-3);
+    margin-top: 12px;
 }
 
-.container5 {
-    width: 316px;
-    height: 559px;
-    /*background-color: #fbff00;*/
-    position: absolute;
-    bottom: 90px;
-    left: 625px;
+.design__info {
+    width: 100%;
+    border-radius: 24px;
+    background: linear-gradient( 00deg, #00000049 , #ffffff00);
+    position: relative;
+    top: -19.5svh;
+    padding: 24px;
 }
-.container5 h1{
-    font-size: 40px;
-    font-family: "Lato-Regular";
-    color: #252525;
-    opacity: 0.6;
-}
-.container5 h2{
-    font-size: 24px;
-    font-family: "Lato-Thin";
-    line-height: 35px;
-    color: #252525;
-    opacity: 0.9;
-    position: absolute;
-    bottom: 435px;
+.design__info h3 {
+    font-family: "Avenir-Roman";
+    font-size: 34px;
+    color: var(--color-1);
 
 }
-.container5 img {
-    position: absolute;
-    bottom: 0px;
-}
-.container6 {
-    width: 317px;
-    height: 147px;
-    /*background-color: #48ff00;*/
-    position: absolute;
-    bottom: 70px;
-    left: 625px;
-}
-.container6 h1 {
-    font-size: 24px;
-    font-family: "Lato-Thin";
-    color: #252525;
-    opacity: 0.6;
-    position: absolute;
-    left: 35px;
-}
-.container6 h2 {
-    font-size: 16px;
-    font-family: "Lato-Thin";
-    color: #252525;
-    /*opacity: 0.6;*/
-    position: absolute;
-    left: 35px;
-    top: 40px;
-    right: 60px;
-    line-height: 23px;
-}
-
-.container7 {
-    width: 316px;
-    height: 559px;
-    /*background-color: #fbff00;*/
-    position: absolute;
-    bottom: 90px;
-    left: 955px;
-}
-.container7 h1{
-    font-size: 40px;
-    font-family: "Lato-Regular";
-    color: #252525;
-    opacity: 0.6;
-}
-.container7 h2{
-    font-size: 24px;
-    font-family: "Lato-Thin";
-    line-height: 35px;
-    color: #252525;
-    opacity: 0.9;
-    position: absolute;
-    bottom: 435px;
-
-}
-.container7 img {
-    position: absolute;
-    bottom: 0px;
-}
-.container8 {
-    width: 317px;
-    height: 147px;
-    /*background-color: #48ff00;*/
-    position: absolute;
-    bottom: 70px;
-    left: 955px;
-}
-.container8 h1 {
-    font-size: 24px;
-    font-family: "Lato-Thin";
-    color: #252525;
-    opacity: 0.6;
-    position: absolute;
-    left: 35px;
-}
-.container8 h2 {
-    font-size: 16px;
-    font-family: "Lato-Thin";
-    color: #252525;
-    /*opacity: 0.6;*/
-    position: absolute;
-    left: 35px;
-    top: 40px;
-    right: 60px;
-    line-height: 23px;
-}
-
-.container9 {
-    width: 316px;
-    height: 559px;
-    /*background-color: #fbff00;*/
-    position: absolute;
-    bottom: 90px;
-    right: 320px;
-}
-.container9 h1{
-    font-size: 40px;
-    font-family: "Lato-Regular";
-    color: #252525;
-    opacity: 0.6;
-}
-.container9 h2{
-    font-size: 24px;
-    font-family: "Lato-Thin";
-    line-height: 35px;
-    color: #252525;
-    opacity: 0.9;
-    position: absolute;
-    bottom: 435px;
-
-}
-.container9 img {
-    position: absolute;
-    bottom: 0px;
-}
-.container10 {
-    width: 317px;
-    height: 147px;
-    /*background-color: #51ff00;*/
-    position: absolute;
-    bottom: 70px;
-    right: 320px;
-}
-.container10 h1 {
-    font-size: 24px;
-    font-family: "Lato-Thin";
-    color: #252525;
-    opacity: 0.6;
-    position: absolute;
-    left: 35px;
-}
-.container10 h2 {
-    font-size: 16px;
-    font-family: "Lato-Thin";
-    color: #252525;
-    /*opacity: 0.6;*/
-    position: absolute;
-    left: 35px;
-    top: 40px;
-    right: 60px;
-    line-height: 23px;
+.design__info p{
+    width: 253px;
+    font-family: "Avenir-Roman";
+    font-size: 18px;
+    color: var(--color-1);
 }
