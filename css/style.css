@@ -1,13 +1,112 @@
-@import url(variables.css);
+@import url(/css/variables.css);
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
 }
+.container__img {
+    order: 2;
+    /* background: blue; */
+    display: flex;
+    align-content: center;
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+}
+.container__1 {
+    order: 1;
+    /* background: red; */
+    padding: 64px 64px;
+    
+}
+.container__text {
+    /* background: yellow; */
+    width: 629px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding-top: 55px;
+}
+.container__text h1{
+    font-size: 64px;
+    font-family: "PlayfairDisplay-Bold";
+    color: var(--color-4);
+}
+.container__text p{
+    font-size: 24px;
+    font-family: "WorkSans-Regular";
+    color: var(--color-1);
+}
+.container__button {
+    display: flex;
+    gap: 32px;
+}
+.container__text a{
+    font-size: 24px;
+    font-family: "WorkSans-Medium";
+    color: var(--color-1);
+    background: var(--color-3);
+    padding: 20px 48px;
+    border-radius: 16px;
+    text-decoration: none;
+    border: 1px solid var(--color-2);
+}
+.container__text a:hover{
+    background: var(--color-1);
+    color: var(--color-3);
+}
+
+.target__bottom {
+    width: 652px;
+    height: 118px;
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 24px 24px;
+    border-radius: 24px;
+    border: 1px solid var(--color-2);
+}
+.target__bottom1 {
+    width: 91px;
+    height: 38px;
+    
+}
+.target__bottom1 span{
+    font-size: 16px;
+    font-family: "WorkSans-Regular";
+    color: var(--color-2);
+}
+.target__bottom2 {
+    width: 91px;
+    height: 38px;
+}
+.target__bottom2 span{
+    font-size: 16px;
+    font-family: "WorkSans-Regular";
+    color: var(--color-2);
+}
+.target__bottom3 {
+    width: 91px;
+    height: 38px;
+}
+.target__bottom3 span{
+    font-size: 16px;
+    font-family: "WorkSans-Regular";
+    color: var(--color-2);
+}
+.target__bottom4 {
+    width: 91px;
+    height: 38px;
+}
+.target__bottom4 span{
+    font-size: 16px;
+    font-family: "WorkSans-Regular";
+    color: var(--color-2);
 }
