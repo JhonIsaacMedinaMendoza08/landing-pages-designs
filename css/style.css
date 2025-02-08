@@ -3,11 +3,69 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
+    background: var(--color-4);
 
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 53px;
+}
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+.main__text {
+    width: 449px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.main__text h1{
+    font-family: "Poppins-Bold";
+    font-size: 72px;
+}
+.text__color-1 {
+    color: var(--color-7);
+}
+.text__color-2 {
+    color: var(--color-6);
+}
+.text__color-3 {
+    color: var(--color-5);
+}
+.main__text p {
+    font-size: 24px;
+    font-family: "Poppins-Regular";
+    color: var(--color-2);
+
+}
+.main__text a {
+    width: 182px;
+    height: 66px;
+    font-size: 24px;
+    font-family: "Poppins-Regular";
+    background-color: var(--color-2);
+    color: var(--color-3);
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container__images {
+    /* background-color: red;  */
+    width: 754px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 67px;
+}
+.container__images img {
+    display: flex;
+    margin-right: 16px;
+    margin-bottom: 8px;
 }
