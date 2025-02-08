@@ -3,11 +3,70 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
+}
+main {
+    
+}
+.main__title {
+    display: flex;
+    padding-bottom: 69px;
+    padding-top: 64px; 
+}
+.main__title h1{
+    width: 531px;
+    background: yellow;
+    font-size: clamp(44px, 8vw, 88px); 
+    font-family: "Avenir-Heavy";
+    color: var(--color-2); 
+    margin-left: 300px;
+}
+.section__bottomCards {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    flex-wrap: wrap;
+}
+.bottom__card__1 {
+    /* background: blue; */
+    width: 400px;
+}
+.bottom__card__1 h2{
+    font-size: clamp(18px, 3vw, 32px);
+    font-family: "Avenir-Heavy";
+    color: var(--color-1);
+}
+.bottom__card__1 p{
+    font-size: clamp(14px, 2vw, 24px);
+    font-family: "Avenir-Roman";
+    color: var(--color-4);
+}
+.bottom__card__1 img {
 
 }
+.bottom__card__2 {
+    background: green;
+    width: 400px;
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+}
+.bottom__card__2 h2{
+
+}
+.bottom__card__2 p{
+
+}
+.bottom__card__2 img {
+
+}
+.bottom__card__3 {
+    background: yellow;
+    width: 400px;
+}
+.bottom__card__3 h2{
+
+}
+.bottom__card__3 p{
+
+}
+.bottom__card__3 img {
+
 }
