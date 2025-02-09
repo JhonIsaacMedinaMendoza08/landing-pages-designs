@@ -3,11 +3,127 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
+
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    
+
+}
+main {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
+    padding-top: 91px;
+}
+main img {
+    /* background: forestgreen; */
+    display: flex;    
+}
+.principal_image {
+    position: absolute;
+    z-index: -1;
+} 
+.font_decor {
+    padding-right: 20px;
 
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+.main__text {
+    /* background: blue; */
+    width: 519px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    left: 10svw;
+
+}
+.main__text h1{
+    font-family: "Avenir-Heavy";
+    font-size: 72px;
+    color: var(--color-2);
+}
+.main__text p{
+    font-family: "Avenir-Roman";
+    font-size: 24px;
+    color: var(--color-3);
+    
+}
+.main__text a{
+    width: 182px;
+    height: 66px;
+    font-size: 24px;
+    font-family: "Poppins-Regular";
+    background-color: var(--color-2);
+    color: var(--color-4);
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__images img {
+}
+.main__bottomRightText {
+    width: 668px;
+    padding: 16px 24px;
+    margin-top: -80px;
+
+}
+.bottomRightText {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+}
+.bottomRightText img{
+}
+.bottomRightText p{
+    font-family: "Avenir-Roman";
+    font-size: 22px;
+    color: var(--color-3);
+}
+
+@media (max-width: 1280px) {
+    body {
+
+    }
+
+    main {
+
+        padding-top: 50px;
+    }
+
+    .main__text {
+
+        left: 3svw;
+
+    }
+
+    .main__text h1 {
+        font-size: 60px;
+    }
+
+    .main__text p {
+        font-size: 22px;
+    }
+
+    .main__bottomRightText {
+        margin-top: -50px;
+    }
+
+    .bottomRightText {
+    }
 }
