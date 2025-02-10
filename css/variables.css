@@ -16,6 +16,10 @@
     src: url(../storage/font/TimesNewRoman/timesnewroman.ttf);
 }
 @font-face {
+    font-family: "TimesNewRoman-italic";
+    src: url(../storage/font/TimesNewRoman/timesnewromanitalic.ttf);
+}
+@font-face {
     font-family: "Poppins-Regular";
     src: url(../storage/font/Poppins/Poppins-Regular.ttf);
 }
