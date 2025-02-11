@@ -3,11 +3,115 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
 
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+main{
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 40px;
+    
+}
+.sectionMain__grid {
+    display: grid;
+    grid-template-columns: 445px 200px 640px;
+    grid-template-rows: 486px 200px 240px;
+    grid-template-areas: "div__ContainerTexts . section__Container-MainImage"
+    "section__Container-LeftImages section__Container-LeftImages ."
+    ". . section__Container-RightImages";
+   
+}
+.section__ContainerTexts {
+
+}
+.div__ContainerTexts {
+    width: 483px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+
+}
+.div__ContainerTexts h1{
+    font-family: "Avenir-Heavy";
+    font-size: 72px;
+    color: var(--color-2);
+}
+.div__ContainerTexts p{
+    font-family: "Avenir-Roman";
+    font-size: 24px;
+    color: var(--color-2);
+}
+.div__ContainerTexts a{
+    width: 288px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Avenir-Roman";
+    background-color: var(--color-2);
+    color: var(--color-5);
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.section__Container-MainImage {
+    grid-area: section__Container-MainImage
+}
+.div__Container-MainImage {
+
+}
+.div__Container-MainImage img{
+}
+.section__Container-LeftImages {
+    grid-area: section__Container-LeftImages;
+}
+.div__Container-LeftImages {
+    display: flex;
+    gap: 25px;
+    margin-top: 90px;
+}
+.div__Container-LeftImages img{
+}
+.section__Container-RightImages {
+    grid-area: section__Container-RightImages;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+    margin-top: 20px;
+
+}
+.div__Container-RightTexts {
+    width: 463px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+.div__Container-RightTexts img{
+    width: 52px;
+}
+.div__Container-RightTexts h3{
+    font-family: "Avenir-Medium";
+    font-size: 24px;
+    color: var(--color-2);
+
+}
+.div__Container-RightTexts p{
+    font-family: "Avenir-Roman";
+    font-size: 22px;
+    color: var(--color-4);
+
+}
+.div__Container-RightImages {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+
+}
+.div__Container-RightImages img{
 }
