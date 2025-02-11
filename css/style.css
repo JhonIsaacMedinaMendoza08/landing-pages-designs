@@ -3,11 +3,145 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
 
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.top_container {
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 650px 190px;
+    grid-template-areas: "main__text main__image"
+    "middle__container middle__container";
+}
+
+.main__text {
+    grid-area: main__text;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+.main__text h1 {
+    width: 413px;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 64px;
+    color: var(--color-2);
+}
+.main__text p{
+    width: 413px;
+    font-family: "PlayfairDisplay-Regular";
+    font-size: 24px;
+    color: var(--color-2);
+}
+.main__text a{
+    width: 121px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "Avenir-Roman";
+    background-color: var(--color-7);
+    color: var(--color-3);
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -300px;
+    
+}
+.main__image {
+    grid-area: main__image;
+    display: flex;
+    justify-content: center;
+}
+.middle__container {
+    /* background: red; */
+    grid-area: middle__container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
+}
+.middle__text {
+    background: var(--color-8);
+    width: 878px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 96px;
+    border-radius: 80px;
+}
+.container_TextMiddle {
+    /* background: blue; */
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container_TextMiddle img {
+
+}
+.container_TextMiddle h3 {
+    font-family: "Poppins-SemiBold";
+    font-size: 32px;
+    color: var(--color-2);
+}
+.container_TextMiddle p{
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    color: var(--color-2);
+}
+
+.sectionBottom_container {
+    background: var(--color-6);
+    width: 100%;
+    height: 472px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    z-index: -1;
+}
+.div__bottomContainer {
+    margin-top: 107px;
+    display: flex;
+    gap: 96px;
+
+}
+.bottomContainer_images {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.bottomContainer_images img{
+}
+.bottomContainer_images span{
+    font-family: "Poppins-Light";
+    font-size: 16px;
+    color: var(--color-3);
+    text-align: center;
+
+}
+
+@media (max-width: 1280px){
+    .main__image {
+        margin-left: -150px;
+
+    }
+    .div__bottomContainer {
+        gap: 56px;
+    
+    }
 }
