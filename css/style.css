@@ -1,13 +1,108 @@
 @import url(variables.css);
+
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
-
+    box-sizing: border-box; 
+}
+body{
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 64px;   
+    background: #070a10;   
+}
+main {
+    display: grid;
+    grid-template-columns: 600px 850px;
+    grid-template-areas: "section__containerTopLeft section__principalImage"
+    "section__bottomArea section__bottomArea";
+}
+.section__containerTopLeft{
+    margin-top: 151px;
+}
+.div__containerTopleft{
+    width: 539px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.div__containerTopleft h1{
+    font-size: 64px;
+    font-family: "Montserrat-ExtraBold";
+    color: white;      
+}
+.div__containerTopleft h1 span{
+    color: red;
+}
+.div__containerTopleft p{
+    font-size: 24px;
+    font-family: "Montserrat-Regular";
+    color: white;
+}
+.div__containerTopleft a {
+    width: 280px;
+    height: 66px;
+    font-size: 22px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-family: "Montserrat-Medium";
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div__containerTopleft div img{
+    width: 100px;
+    position: relative;
+    margin-left: -31px;
+    left: 30px;
+}
+.section__principalImage{
+}
+.div__principalImage img {
+    height: 100vh;
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+
+
+.section__bottomArea {
+    width: 1112px;
+    color: white;
+    margin-top: -100px;
+    
+}
+.div_bottomArea {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.div__bottomCard {
+    width: 360px;
+    height: 101px;
+    background: linear-gradient(90deg, #ffffff58, #ffffff00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.div__bottomCard span{
+    font-size: 24px;
+    font-family: "Montserrat-Medium";
+}
+
+@media (max-width: 1280px){
+    body{
+        padding: 60px;   
+  
+    }
+    .section__bottomArea {
+        margin-top: 0px;
+        
+    }
 }
