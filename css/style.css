@@ -3,11 +3,110 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--color-1);
 
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../storage/font/example.ttf);
+body {
+    width: 1440px;
+    margin: 0 auto;
+    background: linear-gradient(177deg, #080a13, #151017); 
+
 }
+main {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 104px;
+
+
+}
+.main__image {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+
+}
+
+.section_textaArea {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.div_textArea {
+    /* background: blue; */
+    width: 684px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.div_textArea h1{
+    font-family: "Lato-Black";
+    font-size: 88px;
+    color: var(--color-1);
+
+}
+.div_textArea p{
+    font-family: "Lato-Regular";
+    font-size: 24px;
+    color: var(--color-1);
+    line-height: 32px;
+}
+.div_textArea a{
+    width: 216px;
+    height: 66px;
+    font-size: 24px;
+    background-color: var(--color-1);
+    color: var(--color-3);
+    font-family: "Lato-Regular";
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_bottomArea {
+    /* background: green;  */
+    display: flex;
+    justify-content: center;
+    
+}
+.div_bottomArea {
+    width: 1284px;
+    height: 232px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.bottom_card1, 
+.bottom_card2, 
+.bottom_card3 {
+    padding: 44px 54px;
+    background: linear-gradient(180deg, #ffffff43, #ffffff13);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+.bottom_card1 h3,
+.bottom_card2 h3, 
+.bottom_card3 h3{
+    font-size: 32px;
+    font-family: "Lato-Black";
+    color: var(--color-1);
+    line-height: 32px;
+}
+.bottom_card1 p,
+.bottom_card2 p, 
+.bottom_card3 p{
+    font-size: 24px;
+    font-family: "Lato-Light";
+    color: var(--color-1);
+    line-height: 32px;
+}
+
