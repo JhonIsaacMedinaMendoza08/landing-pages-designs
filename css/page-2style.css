@@ -1,0 +1,80 @@
+@import url(../css/page-2variables.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.section__texts{
+    /* background: red; */
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    gap: 139px;
+    padding-top: 139px;
+}
+.text__container{
+    /* background: blue; */
+
+}
+.text__container h1{
+    font-size: 55px;
+    font-family: "Avenir-Heavy";
+    color: var(--color-2);
+    margin-bottom: 10px;
+}
+.text__container p {
+    font-size: 26px;
+    font-family: "Avenir-Roman";
+    color: var(--color-4);
+    margin-bottom: 24px;
+}
+.text__container a{
+    display: inline-block;
+    width: 157px;
+    height: 50px;
+    font-family: "Avenir-Roman";
+    font-size: 18px;
+    background-color: var(--color-2);
+    color: var(--color-3);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+}
+.top__images {
+    /* background: rgb(255, 225, 0); */
+    width: 960px;
+    height: auto;
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 84px;
+    padding-top: 65px;
+
+}
+.imgLeft {
+    width: auto;
+}
+.imgRight {
+    width: auto;
+    padding-top: 152px;
+}
+
+.section__bottom {
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    flex-wrap: wrap;
+    
+}
+.section__bottom img {
+    margin: 40px;
+}
+.images__bottom {
+
+}

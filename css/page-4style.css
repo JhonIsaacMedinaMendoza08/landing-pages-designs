@@ -1,0 +1,76 @@
+@import url(../css/page-4variables.css);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw; /* Usa unidades relativas para mejor adaptabilidad */
+    flex-wrap: wrap; /* Para que los elementos se ajusten */
+}
+
+main img {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+}
+
+.container__text {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Para ajustarlo según la pantalla */
+    max-width: 500px; /* Evita que sea demasiado grande */
+    min-width: 300px; /* No se hace demasiado pequeño */
+}
+
+/* Estilos de los textos */
+.top__text h1 {
+    font-family: "Avenir-Heavy";
+    color: var(--color-2);
+    font-size: clamp(32px, 5vw, 64px); /* Tamaño flexible del título */
+    margin-bottom: 32px;
+}
+
+.top__text p {
+    font-family: "Avenir-Roman";
+    color: var(--color-4);
+    font-size: clamp(18px, 3vw, 26px); /* Tamaño flexible del texto */
+    margin-bottom: 32px;
+}
+
+.top__text a {
+    display: inline-block;
+    width: 158px;
+    height: 54px;
+    font-family: "Avenir-Roman";
+    font-size: 18px;
+    background-color: var(--color-2);
+    color: var(--color-3);
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 88px;
+}
+
+.bottom__text h2 {
+    font-family: "Avenir-Heavy";
+    color: var(--color-1);
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.bottom__text p {
+    font-family: "Avenir-Roman";
+    color: var(--color-4);
+    font-size: 24px;
+    margin-bottom: 40px;
+}
