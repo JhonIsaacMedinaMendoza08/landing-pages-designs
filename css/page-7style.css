@@ -1,0 +1,99 @@
+/* Importar fuentes y variables */
+@import url(../css/page-7variables.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+}
+header {
+    /* background-color: red; */
+    width: 933px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 72px;
+    font-family: "Avenir-Heavy";
+    color: var(--color-1);
+}
+.design__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+    grid-template-rows: 700px;
+    gap: 16px;
+}
+
+.design__item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.design__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.design__item h2 {
+    font-family: "Avenir-Heavy";
+    font-size: 40px;
+    color: var(--color-4);
+}
+
+.design__item p {
+    font-family: "Avenir-Roman";
+    font-size: 24px;
+    color: var(--color-3);
+    margin-top: 12px;
+}
+
+.design__info {
+    width: 100%;
+    border-radius: 24px;
+    background: linear-gradient( 00deg, #00000049 , #ffffff00);
+    position: relative;
+    top: -19.5svh;
+    padding: 24px;
+}
+.design__info h3 {
+    font-family: "Avenir-Roman";
+    font-size: 34px;
+    color: var(--color-1);
+
+}
+.design__info p{
+    width: 253px;
+    font-family: "Avenir-Roman";
+    font-size: 18px;
+    color: var(--color-1);
+}
+
+@media (max-width: 1280px){
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .design__section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(116px, 1fr));
+        grid-template-rows: 550px;
+
+    }
+    .design__info {
+    width: 100%;
+    border-radius: 24px;
+    background: linear-gradient( 00deg, #00000049 , #ffffff00);
+    position: relative;
+    top: -22.5svh;
+    padding: 24px;
+}
+}
