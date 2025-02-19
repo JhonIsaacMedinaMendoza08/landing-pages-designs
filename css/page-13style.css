@@ -1,0 +1,223 @@
+@import url(page-13variables.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: green; 
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.image_left{
+
+    /*background-color: #ff7300;*/
+    position: absolute;
+    left: 295px;
+    bottom: 0px;
+}
+.image_right{
+    /*background-color: #ff7300;*/
+    position: absolute;
+    right: 305px;
+    top: 50px;
+}
+
+.main__text{
+    width: 637px;
+    background-color: transparent;
+    position: absolute;
+    right: 635px;
+    top: 160px;
+}
+.main__text h1 {
+    font-size: 100px;
+    color: #252525;
+    text-align: center;
+    line-height: 108px;
+    margin-top: 20px;
+}
+.main__text p {
+    width: 306px;
+    font-size: 22px;
+    color: #252525;
+    opacity: 0.8;
+    text-align: center;    
+    margin: auto;
+    margin-top: 80px;
+}
+.main__text a {
+    width: 182px;
+    height: 66px;
+    font-size: 24px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    position: absolute; 
+    left: 230px;
+}
+
+.imagen3{
+    width: 637px;
+    height: 692px;
+    /*background-color: #ff7300;*/
+    position: absolute;
+    right: 695px;
+    top: 0px;
+    z-index: -1;
+}
+.imagen4{
+    width: 255px;
+    height: 320px;
+    position: absolute;
+    left: 535px;
+    top: 240px;
+}
+
+.imagen5{
+    width: 191px;
+    height: 242px;
+    position: absolute;
+    right: 575px;
+    top: 520px;
+}
+
+.imagen6{
+    width: 174px;
+    height: 174px;
+    position: absolute;
+    right: 355px;
+    top: 620px;
+}
+.imagen7{
+    width: 179px;
+    height: 176px;
+    position: absolute;
+    left: 305px;
+    top: 250px;
+}
+.container__TopText{
+    width: 434px;
+    height: 104px;
+    position: absolute;
+    left: 295px;
+    top: 80px;
+    /*background-color: #ee0f0f*/
+}
+.container__TopText h1 {
+    font-size: 24px;
+    color: #252525;
+    opacity: 0.45;
+}
+.container__TopText h2 {
+    font-size: 22px;
+    color: #252525;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 5px;
+}
+.container__BottomText{
+    width: 434px;
+    height: 104px;
+    position: absolute;
+    right: 305px;
+    top: 800px;
+    /*background-color: #ee0f0f*/
+}
+.container__BottomText h1 {
+    font-size: 24px;
+    color: #252525;
+    opacity: 0.45;
+}
+.container__BottomText h2 {
+    font-size: 22px;
+    color: #252525;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 5px;
+}
+
+@media (max-width: 1280px) {
+    .image_left{
+        position: absolute;
+        left: 50px;
+    }
+    .image_right{
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+    .main__text-container {
+        height: 600px;
+        position: absolute;
+        top: -100px;
+        left: 480px;
+    }
+    .main__text-container h1 {
+        font-size: 84px;
+        line-height: 80px;
+    }
+    .main__text-container p {
+        width: 306px;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .main__text-container a {
+        display: flex;
+        position: absolute;
+        top: 450px;
+        left: 60px;
+    }
+    .imagen3{
+        position: absolute;
+        top: 0px;
+        left: 330px;
+    }
+    .imagen4{
+        transform: scale(0.8);
+        position: absolute;
+        left: 265px;
+        top: 45px;
+    }
+    .imagen5{
+        transform: scale(0.8);
+        position: absolute;
+        right: 315px;
+        top: 450px;
+    }
+    .imagen6{
+        transform: scale(0.7);
+        position: absolute;
+        right: 105px;
+        top: 520px;
+    }
+    .imagen7{
+        transform: scale(0.7);
+        position: absolute;
+        left: 45px;
+        top: 100px;
+    }
+    .container__TopText{
+        transform: scale(0.9);
+        position: absolute;
+        left: 25px;
+        top: 20px;
+    }
+    .container__BottomText{
+        transform: scale(0.9);
+        position: absolute;
+        right: 55px;
+        top: 680px;
+    }
+    
+}

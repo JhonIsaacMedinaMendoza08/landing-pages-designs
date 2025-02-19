@@ -1,0 +1,109 @@
+@import url(../css/page-11variables.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+    max-width: 1440px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 600px 300px ;
+    grid-template-areas:"main__text main__image"
+                        "main__bottomCards main__bottomCards";
+    padding-top: 72px;
+    column-gap: 20px;
+    padding-bottom: 50px;
+}
+.main__text {
+    /* width: 637px; */
+    /* background: red; */
+    grid-area: main__text;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-right: 20px;
+
+}
+.main__text h1 {
+    /* width: 637px; */
+    font-family: "Avenir-Heavy";
+    font-size: 72px;
+    color: var(--color-2);
+    /* display: flex; */
+
+}
+.main__text p {
+    width: 586px;
+    font-family: "Avenir-Roman";
+    font-size: 26px;
+    color: var(--color-5);
+}
+.main__text a {
+    width: 182px;
+    height: 66px;
+    font-size: 24px;
+    font-family: "Poppins-Regular";
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__image {
+    grid-area: main__image;
+    /* background: blue; */
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center;
+    
+
+}
+
+.main__bottomCards {
+    width: 1312px;
+    background: var(--color-2);
+    grid-area: main__bottomCards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 118px;
+    padding: 64px;
+    border-radius: 40px;
+}
+.main__bottomCards img {
+
+}
+.main__bottomCards h3 {
+    font-family: "Avenir-Heavy";
+    font-size: 32px;
+    color: var(--color-1);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.main__bottomCards p{
+    font-family: "Avenir-Book";
+    font-size: 24px;
+    color: var(--color-1);
+}
+
+@media (max-width: 1280px){
+    main {
+        padding-top: 22px;
+        transform: scale(0.85);
+        padding-bottom: 20px;
+
+    }
+}
