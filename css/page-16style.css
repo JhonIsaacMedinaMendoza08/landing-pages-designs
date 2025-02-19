@@ -1,0 +1,128 @@
+@import url(page-16variables.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #061a23, #064552);
+    height: 105%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+.section__principalImage {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.section__mainText{
+    width: 724px;
+    background: linear-gradient(180deg, #00000077 , #00000023);
+    backdrop-filter: blur(5px);
+    border-radius: 24px;
+    padding: 40px 56px;
+    position: absolute;
+    left: 295px;
+    top: 190px;
+}
+.mainTexts{
+    
+    
+}
+.mainTexts h1{
+    font-size: 65px;
+    color: #ffffff;
+    font-family: "Avenir-Heavy";
+    margin-top: 24px;
+
+}
+.mainTexts p{
+    font-size: 26px;
+    color: #ffffff;
+    font-family: "Avenir-Roman";
+    margin-top: 40px;
+
+}
+.mainTexts a{
+    width: 182px;
+    height: 66px;
+    font-size: 24px;
+    background-color: var(--color-2);
+    color: var(--color-3);
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+
+.section_bottomArea{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+
+}
+.div__bottomMainArea{
+    background: linear-gradient(180deg, #00000077 , #00000023);
+    backdrop-filter: blur(5px);
+    width: 1312px;
+    display: flex;
+    padding: 24px 56px;
+    gap: 92px;
+    border-radius: 32px;
+    border: 1px solid white;
+    
+
+}
+
+.div__bottomText {
+
+}
+.div__bottomText h1{
+    font-family: "Avenir-Heavy";
+    font-size: 24px;
+    color: var(--color-1);
+
+
+}
+.div__bottomText p{
+    font-family: "Avenir-Roman";
+    font-size: 18px;
+    color: var(--color-1);
+
+}
+
+@media (max-width: 1280px){
+    html, body {
+        height: 113%;
+    }
+    main {
+
+    }
+    .section__mainText{
+        transform: scale(0.8);
+        position: absolute;
+        left: 35px;
+        top: 150px;
+    }
+    .section_bottomArea{
+        transform: scale(0.8);
+    }
+
+}
