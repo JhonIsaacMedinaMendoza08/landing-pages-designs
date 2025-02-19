@@ -1,0 +1,17 @@
+:root {
+    --color-1: #0D261B;
+    --color-2: #FFFFFF;
+    --color-3: #252525;
+    --color-4: #253538;
+    --color-5: #457D61;
+
+}
+
+@font-face {
+    font-family: "TimesLTStd-Roman";
+    src: url(../storage/font/times/TimesLTStd-Roman.ttf);
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../storage/font/Poppins/Poppins-Regular.ttf);
+}
