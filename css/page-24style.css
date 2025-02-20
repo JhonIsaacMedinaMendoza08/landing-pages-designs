@@ -1,0 +1,123 @@
+@import url(page-24variables.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; 
+    /* padding: 64px; */
+}
+main {
+    display: grid;
+    grid-template-columns: 511px 850px;
+    grid-template-areas: "container__right section_rightimage";
+    
+}
+.container__right {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+.div__topTexts {
+    width: 511px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.div__topTexts h1{
+    font-family: "ZillaSlab-Bold";
+    font-size: 62px;
+    color: var(--color-2);
+
+}
+.div__topTexts span{
+    font-family: "ZillaSlab-Bold";
+    font-size: 62px;
+    color: var(--color-3);
+}
+.div__topTexts img{
+}
+.div__topTexts p{
+    font-family: "inter-Regular";
+    font-size: 24px;
+    color: var(--color-2);
+}
+.div__topTexts a{
+    width: 200px;
+    height: 66px;
+    font-size: 22px;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    font-family: "inter-Medium";
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_leftBottomCards {
+    width: 607px;
+    display: flex;
+    gap: 20px;
+}
+.div__bottomCards {
+    width: 607px;
+    background: var(--color-4);
+    padding: 24px 48px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+.div__bottomCards img{
+}
+.div__bottomCards h3{
+    font-family: "inter-SemiBold";
+    font-size: 22px;
+    color: var(--color-1);
+}
+.div__bottomCards p{
+    width: 93px;
+    font-family: "inter-Light";
+    font-size: 15px;
+    color: var(--color-1);
+}
+.section_rightimage {
+}
+.div_rightImage {
+    position: relative;}
+.guitarrist {
+    display: flex;
+    margin: 0 auto;
+}
+.AsteriskTop {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    z-index: -1;
+}
+.containerTop {
+    position: absolute;
+    top: 0;
+    left: 480px;
+    z-index: -1;
+}
+.Star {
+    position: absolute;
+    bottom: 0;
+    left: 620px;
+    z-index: -1;
+}
+@media (max-width: 1280px){
+    .container__right {
+        transform: scale(0.8);
+    }
+}
