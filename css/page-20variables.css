@@ -1,0 +1,35 @@
+:root {
+    --color-1: #352F31;
+    --color-2: #363031;
+    --color-3: #FFFFFF;
+    --color-4: #d9d9d9;
+    --color-5: #ffffff4d;
+    --color-6: #363032;
+    --color-7: #A36A4F;
+    --color-8: #ECDAC4;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay-Bold";
+    src: url(../storage/font/Playfair_Display/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: "PlayfairDisplay-Regular";
+    src: url(../storage/font/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url(../storage/font/Avenir/Avenir-Roman.ttf);
+}
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(../storage/font/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../storage/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url(../storage/font/Poppins/Poppins-Light.ttf);
+}
