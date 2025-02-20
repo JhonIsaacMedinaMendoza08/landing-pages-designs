@@ -1,0 +1,126 @@
+@import url(page-22variables.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: var(--color-3);
+    color: white;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.top-section {
+    display: flex;
+    justify-content: center;
+    height: 670px;
+    gap: 50px;
+
+}
+
+.text_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 40px;
+    align-items: flex-start;
+
+}
+.text_content h1{
+    width: 405px;
+    font-size: 88px;
+    font-family: "Lato-Bold";
+    color: var(--color-1);
+}
+.text_content p{
+    width: 545px;
+    font-family: "Lato-Regular";
+    font-size: 24px;
+    color: var(--color-1);
+    line-height: 32px;
+}
+.text_content a{
+    width: 190px;
+    height: 66px;
+    font-size: 28px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-family: "Lato-Regular";
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images_top{
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+}
+
+
+.info_sectionMiddle {
+    display: flex;
+    gap: 138px;
+
+}
+.middle_image {
+
+}
+.middle_image img{
+    
+}
+.middle_info { 
+    width: 456px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -160px;
+    gap: 40px;
+
+}
+.middle_info img{
+    width: 96px;
+
+}
+.container_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.container_info h3{ 
+    font-family: "Lato-Black";
+    font-size: 32px;
+    color: var(--color-1);
+    
+}
+.container_info p{ 
+    font-family: "Lato-Light";
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-1);
+    
+}
+
+.bottom_images {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1280px){
+    main {
+        transform: scale(0.95);
+
+    }
+}

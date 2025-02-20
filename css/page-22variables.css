@@ -1,0 +1,28 @@
+:root {
+    --color-1: #ffffff;
+    --color-2: #01062D;
+    --color-3: #010625;
+}
+
+
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../storage/font/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../storage/font/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url(../storage/font/Lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: "Lato-Thin";
+    src: url(../storage/font/Lato/Lato-Thin.ttf);
+}
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../storage/font/Lato/Lato-Black.ttf);
+}
