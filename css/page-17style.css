@@ -1,0 +1,112 @@
+@import url(page-17variables.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+
+.main__text {
+    /* background: red; */
+    text-align: center;
+    width: 689px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 56px;
+}
+.main__text h1{
+    font-family: "Poppins-SemiBold";
+    font-size: 55px;
+    color: var(--color-1);
+}
+.main__text p{
+    font-family: "Avenir-Roman";
+    font-size: 24px;
+    color: var(--color-4);
+
+}
+.main__text a{
+    width: 182px;
+    height: 66px;
+    font-size: 24px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-family: "Poppins-Regular";
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__middleTexts {
+    background: var(--color-2); 
+    padding: 40px 64px;
+    width: 1048px;
+    display: flex;
+    gap: 72px;
+    border-radius: 48px;
+
+
+}
+.middle__Text {
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.middle__Text h3{
+    font-family: "Avenir-Heavy";
+    font-size: 24px;  
+    color: var(--color-1);
+}
+.middle__Text img{
+    width: 66px;
+}
+.middle__Text a{
+    font-family: "Avenir-Roman";
+    font-size: 18px;
+    color: var(--color-3);
+}
+.container__images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main__image {
+    /* background: yellow; */
+    margin-top: -100px;
+    z-index: -1;
+}
+.bottom__imagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+@media (max-width: 1280px){
+    main {
+        transform: scale(0.9);
+        padding: 30px;
+
+    }
+    .bottom__imagesContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
